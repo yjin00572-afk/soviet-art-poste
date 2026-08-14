@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+*.local
+
+# Temporary exports and generated review assets
+tmp/
+temp/
+output/
+outputs/
+generated/
+exports/
+
+# Logs
+*.log
+
+# Keep showcase examples tracked if intentionally added.
+# The examples directory itself is preserved via .gitkeep.

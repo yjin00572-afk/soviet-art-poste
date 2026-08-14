@@ -1,0 +1,4 @@
+interface:
+  display_name: "Soviet Aviation Poster"
+  short_description: "Turn uploaded images into Soviet aviation-era poster prompts."
+  default_prompt: "Use $soviet-aviation-poster to transform my uploaded image into a Soviet aviation poster with relevant multilingual copy."
