@@ -556,3 +556,103 @@ When contributing, prefer improvements that make prompts more image-specific rat
 
 本仓库默认使用 MIT License，详见 [LICENSE](./LICENSE)。  
 This repository uses the MIT License. See [LICENSE](./LICENSE).
+
+## High-Collage Mode / 强拼贴模式
+
+Use this mode when the default poster result is too clean, too flat, or not montage-like enough.
+
+在默认结果拼贴感不够、画面过于完整、缺少切片和分区时，使用这个模式。
+
+### High-Collage Invocation / 强拼贴调用模板
+
+```text
+Use $soviet-aviation-poster to transform my uploaded image into a high-collage Soviet civil aviation poster. Preserve the real subject and visual anchors from the source image, but make it much more montage-like, with inset frames, cropped detail windows, clipped circles, route-map sectors, overlapping paper blocks, and 3-5 separate visual compartments.
+```
+
+```text
+Use $soviet-aviation-poster to transform my uploaded image into a Soviet civil aviation poster. 请加强拼贴感，使用 high collage 模式，把画面拆成多个几何拼贴块、局部裁切窗、圆形切片、路线图分区和叠压纸片结构，同时保留原图主体和视觉锚点。
+```
+
+### High-Collage Prompt Skeleton / 强拼贴 Prompt 骨架
+
+```text
+Transform the uploaded image into a high-collage Soviet civil aviation poster. Preserve the recognizable subject matter from the uploaded image, especially [anchors]. Rebuild the scene as an assembled poster montage instead of one continuous illustration, using [chosen archetype], strong geometric abstraction, inset frames, clipped circles, cropped detail windows, route-map sectors, overlapping paper blocks, and 3-5 separate visual compartments derived from the source image.
+
+Use a restrained palette of [palette], with low-to-moderate saturation and one vivid accent. Replace photographic realism with simplified silhouettes, cut-paper forms, posterized shadows, cropped fragments, and clean shape hierarchy. Keep the source image identifiable while making the composition feel intentionally layered, graphic, dynamic, and visibly constructed from separate poster pieces.
+
+Add a large integrated headline in bold sans-serif style, plus smaller Russian, Chinese, and English labels tied directly to the uploaded content. Keep typography short and functional. Finish with subtle paper grain, mild ink fade, and a printed poster surface rather than glossy digital realism.
+```
+
+### High-Collage Checklist / 强拼贴检查清单
+
+- Use 3-5 separate visual compartments when the source image has enough motifs.
+- Add inset frames, cropped windows, clipped circles, or route-map sectors instead of one uninterrupted scene.
+- Keep the original subject identifiable even when the layout becomes more fragmented.
+- Prefer medium-to-high collage density over a clean single-panel composition.
+- Keep text short so the added montage structure remains readable.
+
+## Variation Rules / 差异化生成规则
+
+If your outputs look too similar, the usual problem is not the style reference. The usual problem is that the prompt keeps reusing the same archetype, the same palette logic, and the same headline logic across different uploads.
+
+如果生成结果太像，通常不是“风格不够像”，而是每次都在复用同一种海报 archetype、同一种配色套路、同一种文案套路。
+
+Use these rules:
+
+- Let one image-specific differentiator control the poster.
+- Extract 3-6 visible motifs from the uploaded image and force them into the composition.
+- Choose the archetype from the image, not from habit.
+- Derive the palette from the uploaded image first, then Sovietize it.
+- Use medium or high collage when the image has enough secondary elements.
+- Make the trilingual text describe the uploaded image content, not an airline.
+- Do not mention airline brands, company names, route numbers, or airline slogans unless explicitly requested.
+
+Recommended self-check:
+
+- What is the most unique visual anchor in this upload?
+- Is this image mainly architecture, portrait, market, night scene, coastline, hospitality, or infrastructure?
+- Do the headline nouns really come from the uploaded image?
+- If the same prompt could fit another upload with no major edits, it is still too generic.
+
+### Content-First Trilingual Copy / 内容优先三语文案
+
+Default language set:
+
+- Russian
+- Chinese
+- English
+
+But the text topic must come from the uploaded image:
+
+- architecture -> landmark, tower, bridge, facade, skyline
+- coastline -> coast, harbor, waves, horizon, pier
+- market or street -> awnings, stalls, square, lights, crowd flow
+- hospitality or food -> table, fruit, tea, service, comfort
+- portrait -> pose, uniform, gesture, silhouette, gaze
+- night scene -> moonlight, lamps, blue night, reflection, windows
+
+Avoid default airline copy such as:
+
+- `Aeroflot`
+- `Soviet Airlines`
+- `Flight Service`
+- `Air Route`
+- generic company slogans
+
+Prefer content-linked copy such as:
+
+- `Harbor at Dusk`
+- `Blue Night, Odessa`
+- `Summer Market`
+- `Windows of the Coast`
+- `Tower and River`
+
+### Recommended Invocation / 推荐调用模板
+
+```text
+Use $soviet-aviation-poster to transform my uploaded image into a Soviet poster with stronger variation across different source images. Analyze the uploaded image first, identify the primary differentiator, extract 3-6 visual motifs, choose the best archetype from the image itself, and derive the palette from the image content rather than from a default airline palette. Use Russian, Chinese, and English text by default, but make all text directly about the uploaded image subject, place, object, architecture, season, or mood. Do not use airline brands, company names, or generic aviation slogans unless I explicitly ask for them. If the image contains enough secondary elements, use medium or high collage and split the scene into multiple image-derived compartments.
+```
+
+```text
+Use $soviet-aviation-poster to transform my uploaded image into a Soviet poster. 请先分析上传图里最独特的视觉锚点，并让它主导构图、配色和文案。请提取 3-6 个原图元素，把它们拆进拼贴结构里，避免每次都生成同一种海报。默认使用俄文、中文、英文三国语言，但文案必须直接描述上传图片里的地点、物体、建筑、季节、气氛或人物，不要默认写航空公司、航线号、服务口号，除非我明确要求。若画面元素足够丰富，请使用 medium collage 或 high collage。
+```
