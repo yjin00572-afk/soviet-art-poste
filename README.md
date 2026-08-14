@@ -19,12 +19,13 @@ It is not just a retro illustration helper. Its job is to preserve the source im
 
 1. 将 skill 文件夹放入 Codex 的技能目录。  
    Put the skill folder inside your Codex skills directory.
+   
    或者直接在codex、豆包等agent对话框中输入：请为我安装这个skill：https://github.com/yjin00572-afk/soviet-art-poste
    
-2. 在 Codex 中上传一张图片。  
+3. 在 Codex 中上传一张图片。  
    Upload an image in Codex.
    
-3. 调用 skill。  
+4. 调用 skill。  
    Invoke the skill with one of the templates below.
    提示词：
    1、Use $soviet-aviation-poster to transform my uploaded image into a Soviet-style poster.
