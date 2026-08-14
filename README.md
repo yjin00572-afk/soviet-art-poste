@@ -7,13 +7,10 @@
 [![License](https://img.shields.io/badge/license-add%20your%20own-lightgrey?style=flat-square)](#license--许可证)
 ## 用途
 > 将用户上传的图片改写为苏联民航海报风格，同时保留原图的可识别内容。  
-> Transform uploaded images into Soviet civil aviation-era poster concepts while preserving the identity of the original scene.
+> 这是一个 Codex skill，用来把用户上传的图片转换成“苏联民航海报”风格的提示词、构图方向和多语言广告文案。  
 
-这是一个 Codex skill，用来把用户上传的图片转换成“苏联民航海报”风格的提示词、构图方向和多语言广告文案。  
-This is a Codex skill for turning uploaded images into Soviet civil aviation-style prompts, composition plans, and multilingual ad-copy directions.
+感谢你的喜欢，第一次制作可能有一些问题，如果有任何灵感欢迎抖音艾特我 @Breathe 
 
-它不是单纯做复古插画，而是强调两件事：保留原图内容，以及用中世纪后期苏联民航宣传海报的视觉语言重组画面。  
-It is not just a retro illustration helper. Its job is to preserve the source image and rebuild it using the visual language of mid-century Soviet civil aviation posters.
 
 ## Quick Start / 快速开始
 
