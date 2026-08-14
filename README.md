@@ -6,10 +6,9 @@
 [![Style](https://img.shields.io/badge/style-Soviet%20aviation%20poster-b31b1b?style=flat-square)](#design-rules--设计规则)
 [![License](https://img.shields.io/badge/license-add%20your%20own-lightgrey?style=flat-square)](#license--许可证)
 ## 用途
-> 将用户上传的图片改写为苏联民航海报风格，同时保留原图的可识别内容。  
-> 这是一个 Codex skill，用来把用户上传的图片转换成“苏联民航海报”风格的提示词、构图方向和多语言广告文案。  
+> 这是一个 Codex skill，可将用户上传的图片改写为苏联海报风格，同时保留原图的可识别内容。  
 
-感谢你的喜欢，第一次制作可能有一些问题，如果有任何灵感欢迎抖音艾特我 @Breathe 
+感谢你的喜欢，第一次制作可能有一些问题，如果有任何问题或者灵感欢迎抖音艾特我 @Breathe 
 
 
 ## Quick Start / 快速开始
@@ -25,8 +24,12 @@
 4. 调用 skill。  
    Invoke the skill with one of the templates below.
    提示词：
-   1、Use $soviet-aviation-poster to transform my uploaded image into a Soviet-style poster.
-   2、Use $soviet-aviation-poster to transform my uploaded image into a Soviet poster. 请先分析上传图里最独特的视觉锚点，并让它主导构图、配色和文案。请提取 3-6 个原图元素，把它们拆进拼贴结构里，避免每次都生成同一种海报。默认使用俄文、中文、英文三国语言，但文案必须直接描述上传图片里的地点、物体、建筑、季节、气氛或人物。若画面元素足够丰富，请使用 medium collage 或 high collage。
+   >（1）Use $soviet-aviation-poster to transform my uploaded image into a Soviet-style poster.
+   >（2）建筑/城市 专用空间版：
+   >Use $soviet-aviation-poster to transform my uploaded image into a Soviet poster. 请优先保留建筑或城市的空间过渡感，先分析前景、中景、背景、地平线、天际线叠压、道路/桥梁/立面退深，再把这些空间关系压缩成海报化层次。不要把城市直接压成一张纯平贴片，要保留 2-3 层可读景深，可用建筑遮挡、尺度变化、远近明度、光束、窗口节奏和斜向透视来表现空间。颜色请先根据原图主色和冷暖关系决定，再做苏联风格化，不要套固定蓝红模板。默认俄文、中文、英文三语，文案必须直接对应图中的地点、建筑、时间感或气氛。
+   >（3）人物/场景 专用空间版：
+   >Use $soviet-aviation-poster to transform my uploaded image into a Soviet poster. 请优先保留人物与环境之间的空间关系，先分析人物是否在前景、后方是否有建筑/街道/天空/室内层次，再把前景人物、中景物件、背景环境压缩成海报化景深，而不是全部压成同一平面。请保留 2-3 层空间过渡，可用人物遮挡、桌面或栏杆前景、背景轮廓叠压、光带、远近色阶和局部拼贴窗来表现空间。颜色请根据原图主色、肤色、服装色和环境色来决定苏联风格化方案，不要固定配色。默认俄文、中文、英文三语，文案必须直接对应图中的人物、动作、物体、地点或氛围。
+   
 
 4.默认使用俄语、英语和中文，如果有不喜欢的可以二次调整。
 
