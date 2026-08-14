@@ -33,8 +33,8 @@ It is not just a retro illustration helper. Its job is to preserve the source im
 4.默认使用俄语、英语和中文，如果有不喜欢的可以二次调整。
 
 ## Examples Image / 示例图像
-<img width="1365" height="2048" alt="image" src="https://github.com/user-attachments/assets/392569e6-94fd-43b0-8008-60da991e6dac" />
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/bfe3c94d-60bf-473f-9abd-fd893818cd81" />
+<img width="1365" height="2048" alt="image" src="https://github.com/user-attachments/assets/392569e6-94fd-43b0-8008-60da991e6dac" /><img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/bfe3c94d-60bf-473f-9abd-fd893818cd81" />
+
 
 
 
